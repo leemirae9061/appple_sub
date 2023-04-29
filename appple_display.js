@@ -103,3 +103,15 @@ userInput.addEventListener("input", function () {
   let userText = userInput.value;
   userWriteBox.innerHTML = userText;
 });
+
+let sideMenuBtn = document.querySelector(".burger_wrap"),
+  sideMenuWrap = document.querySelector(".side_menu_wrap"),
+  sideMenuCloseBtn = document.querySelector(".side_menu_li i");
+
+sideMenuBtn.addEventListener("click", function () {
+  sideMenuWrap.classList.add("side_menu_wrap-show");
+});
+
+sideMenuCloseBtn.addEventListener("click", function () {
+  sideMenuWrap.classList.remove("side_menu_wrap-show");
+});
